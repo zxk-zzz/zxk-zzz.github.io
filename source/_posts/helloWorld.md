@@ -35,8 +35,8 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 $ hexo deploy
 ```
 
+<!-- ![](helloWorld/1.png) -->
+
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
-
-
-![](hello-world/testpng.png)
+{% asset_img 1.png %}

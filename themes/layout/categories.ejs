@@ -1,0 +1,21 @@
+<% site.categories.forEach(function(category){ %>
+    <% if (category.parent === null) { %>
+      <div class="parent-category">
+        <h3><%= category.name %></h3>
+        <% category.children.forEach(function(child){ %>
+          <div class="child-category">
+            <a href="<%= url_for(child.path) %>"><%= child.name %></a>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+  <% }) %>
+
+  .parent-category {
+    margin-left: 20px;
+    border-left: 2px solid #4CAF50;
+  }
+  .child-category {
+    margin-left: 40px;
+    padding: 5px;
+  }
